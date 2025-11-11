@@ -3,7 +3,7 @@ The official repo of the ICLR 2025 paper, [High-Precision Dichotomous Image Segm
 
 <div align="center" style="display: flex; justify-content: center; flex-wrap: wrap;">
   <a href='https://arxiv.org/pdf/2410.10105'><img src='https://img.shields.io/badge/arXiv-DiffDIS-B31B1B'></a>&ensp; 
-  <a href='https://huggingface.co/spaces/qianyu1217/diffdis'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20-Model-blue'></a>&ensp;
+  <a href='https://huggingface.co/qianyu1217/diffdis'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20-Model-blue'></a>&ensp;
   <a href='LICENSE'><img src='https://img.shields.io/badge/License-MIT-yellow'></a>&ensp; 
 </div>
 
@@ -65,7 +65,7 @@ The model will be saved in `./saved_model/DiffDIS/`
 ## III. Inference
 1. Update the test dataset path in config file `./utils/config.py` (line 3~7)
 2. Copy the file `/path/to/sd-turbo/unet/config.json` and paste it under your checkpoint `./saved_model/DiffDIS/Model_XXX/unet/`.
-You can also download our trained unet at [Google Drive](https://drive.google.com/drive/folders/1NKmUbn9BiV7xYy_1c2khIBAuOQNuYAdR?usp=sharing).
+You can also download our trained unet at [Google Drive](https://drive.google.com/drive/folders/1NKmUbn9BiV7xYy_1c2khIBAuOQNuYAdR?usp=sharing) or [Huggingface](https://huggingface.co/qianyu1217/diffdis).
 3. Update the `--checkpoint_path`, `--pretrained_model_path` and `--output_dir` in `./scripts/run_inference.sh`. 
 
 4. Start inference by:
